@@ -1,0 +1,8 @@
+config.py
+base.csv
+.vscode/
+__pycache__/
+env/
+migrations/
+
+

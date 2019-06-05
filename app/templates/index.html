@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>{{ title }}</title>
+  </head>
+    <body>
+        <h1>Hello, {{ user.username }}!</h1>
+        <div class="container">
+            <h2></h2>
+              <div class="row">
+                  <div class="card" style="width: 15rem;" >
+                    <a href="{{ url_for('catalog') }}"><img src="{{ url_for('static', filename='metalocherepitca_red.jpg') }}" alt="ops image" class="card-img-top" alt="Металлочерепица"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Металлочерепица</h5>
+                      <p class="card-text">СУПЕРМОНТЕРРЕЙ С ПОКРЫТИЕМ ПОЛИЭСТЕР Цена: от 299 руб (за кв.м)</p>
+                      <!--<a href="#" class="btn btn-primary">Переход куда-нибудь</a>--> 
+                    </div>
+                  </div>
+                    <div class="card" style="width: 15rem;" >
+                      <a href="https://www.google.ru"><img src="{{ url_for('static', filename='saiding.png') }}" alt="ops image" class="card-img-top" alt="Сайдинг металлический"></a>
+                      <div class="card-body">
+                        <h5 class="card-title">Сайдинг металлический</h5>
+                        <p class="card-text">с покрытием ПОЛИЭСТЕР Цена: от 337 руб (за кв.м)</p>
+                        <!--<a href="#" class="btn btn-primary">Переход куда-нибудь</a>-->
+                      </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
